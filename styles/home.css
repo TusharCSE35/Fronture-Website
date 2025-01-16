@@ -1,0 +1,32 @@
+.section-1 {
+    padding-top: 80px; /* Space for navbar */
+    height: 100vh; /* Ensure the section covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content to the right */
+    position: relative;
+    overflow: hidden;
+    background: url('../image/section-1-image.webp') no-repeat center center/cover;
+    background-size: cover; /* Ensures the image covers the full height */
+    background-position: top right; /* Align the background image to the top-right */
+}
+
+.section-1-text {
+    padding: 20px;
+    max-width: 50%;
+    z-index: 2;
+    color: white; /* Ensure text is visible on top of the image */
+}
+
+@media (max-width: 991px) {
+    .section-1 {
+        flex-direction: column;
+        height: auto;
+        background-position: center; /* Center the image for small screens */
+    }
+
+    .section-1-text {
+        max-width: 100%;
+        text-align: center;
+    }
+}
