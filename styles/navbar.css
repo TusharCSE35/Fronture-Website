@@ -1,10 +1,11 @@
+/* Navbar Custom Styles */
 .navbar {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 14px 115px;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    padding: 14px 115px; 
 }
 
 .navbar-brand img {
@@ -79,30 +80,106 @@
     background-color: transparent;
 }
 
-@media (max-width: 991px) {
-    .navbar-nav .dropdown-menu {
-        position: static;
-        width: 100%;
-        padding: 10px 0;
-    }
-
+/* Extra Small (Mobile, up to 576px) */
+@media (max-width: 576px) {
     .navbar {
-        padding: 10px 15px;
-    }
-
-    .navbar-brand {
-        padding-left: 2px; 
-    }
-    .navbar-toggler {
-        margin-right: 2px;  
+        padding: 14px 2px;
     }
 
     .navbar-nav .nav-item {
         margin: 0 5px;
     }
 
-    #servicesDropdown + .dropdown-menu,
-    #resourcesDropdown + .dropdown-menu {
+    .navbar-nav .dropdown-menu {
+        position: static;
         width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 2px;
+    }
+}
+
+/* Small (Tablets, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar {
+        padding: 14px 3px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 5px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 2px;
+    }
+}
+
+/* Medium (Small Laptops, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        padding: 14px 3px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 8px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* Large (Laptops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        padding: 14px 3px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 10px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 200px;
+    }
+}
+
+/* Extra Large (Big Desktops, 1200px to 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .navbar {
+        padding: 14px 3px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 12px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 200px;
+    }
+}
+
+/* Extra Extra Large (Very Large Desktops, 1400px and above) */
+@media (min-width: 1400px) {
+    .navbar {
+        padding: 14px 115px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 15px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 200px;
     }
 }
