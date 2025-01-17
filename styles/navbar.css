@@ -94,6 +94,13 @@
         position: static !important; 
     }
 
+    .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
     .navbar-toggler {
         margin-right: 2px;
     }
@@ -113,6 +120,13 @@
 
     .navbar-nav .nav-item:last-child {
         border-bottom: none; 
+    }
+
+    .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
     .navbar-toggler {
@@ -146,6 +160,17 @@
         right: 0 !important; 
         left: auto !important; 
         position: static !important;
+    }
+
+    .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        margin-right: 2px;
     }
 }
 
